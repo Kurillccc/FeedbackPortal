@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Feedback(models.Model):
     FEEDBACK_TYPES = [
         ('wish', 'Пожелание'),

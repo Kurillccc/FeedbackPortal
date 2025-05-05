@@ -1,5 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+
 from .forms import FeedbackForm
+
 
 def feedback_view(request):
     if request.method == 'POST':
@@ -10,6 +12,7 @@ def feedback_view(request):
     else:
         form = FeedbackForm()
     return render(request, 'feedback/form.html', {'form': form})
+
 
 def home(request):
     return render(request, 'home.html')
