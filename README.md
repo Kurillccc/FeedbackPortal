@@ -39,17 +39,21 @@ Django-приложение для сбора обращений от польз
 ## ⚡ Инструкция по запуску:
 
 1. Клонируем репозиторий
+
 git clone https://github.com/Kurillccc/FeedbackPortal
 cd feedback-portal
 
 2. Создание и активация виртуального окружения
+
 python3 -m venv .venv
 source .venv/bin/activate  (или .venv\Scripts\activate на Windows)
 
 3. Установка зависимостей
+
 pip install -r requirements.txt
 
 4. Применяем миграции
+
 python manage.py migrate
 
 5. Создаем суперпользователя (для админки)
